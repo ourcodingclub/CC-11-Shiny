@@ -1,5 +1,5 @@
 # CC-11-Shiny
-Using Shiny to produce interactive web-apps
+Using Shiny to create interactive web-apps
 
 This repository contains the files necessary to complete the Coding Club Shiny tutorial - you can check it out at: 
 <ADD URL>
