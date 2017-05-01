@@ -2,7 +2,7 @@
 Using Shiny to create interactive web-apps
 
 This repository contains the files necessary to complete the Coding Club Shiny tutorial - you can check it out at: 
-<ADD URL>
+[https://ourcodingclub.github.io/2017/03/07/shiny.html](https://ourcodingclub.github.io/2017/03/07/shiny.html)
 
 The subdirectory `Example_App` contains an example Shiny application which can be recreated using the online tutorial.
 
@@ -12,4 +12,4 @@ The subdirectory `Example_App` contains an example Shiny application which can b
 For more about Coding Club, please see https://ourcodingclub.github.io/
 
 We would love to hear your feedback on the tutorial, whether you did it in the classroom or online:
-<ADD SURVEY MONKEY>
+[https://www.surveymonkey.co.uk/r/PC9RT6R](https://www.surveymonkey.co.uk/r/PC9RT6R)
