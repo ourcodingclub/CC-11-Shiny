@@ -1,11 +1,13 @@
-library(shiny)
-library(ggplot2)
-library(dplyr)
-library(agridat) # The package where "beaven.barley" comes from
+# Packages ----
+library(shiny)  # Required to run any Shiny app
+library(ggplot2)  # For creating pretty plots
+library(dplyr)  # For filtering and manipulating data
+library(agridat)  # The package where "beaven.barley" comes from
 
+# Loading Data ----
 Barley <- as.data.frame(beaven.barley)
 
-# ui.R
+# ui.R ----
 ui <- 
   fluidPage(
     titlePanel(title = (h4("Barley Yield", align = "center"))),
@@ -27,19 +29,23 @@ ui <-
       )
     )
 
-
-
-# server.R
+# server.R ----
 server <- function(input, output) {
   output$myhist <- renderPlot(ggplot(Barley, aes(x = yield)) + geom_histogram(bins = input$bin, 
                                                                               fill = input$col, 
                                                                               group=input$gen, 
-                                                                              data=Barley[Barley$gen == input$gen,]))
+                                                                              data=Barley[Barley$gen == input$gen,],
+  																																						colour = "black"))
   output$mytext <- renderText(input$text)
   
   output$mytable <- renderTable(Barley %>%
-                                  filter(gen == input$gen))
+  																filter(gen == input$gen) %>%
+  																summarise("Mean" = mean(yield), 
+  																					"Median" = median(yield),
+  																					"STDEV" = sd(yield), 
+  																					"Min" = min(yield),
+  																					"Max" = max(yield)))
   }
 
-# Run the application 
+# Run the app ----
 shinyApp(ui = ui, server = server)
