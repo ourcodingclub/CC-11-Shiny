@@ -23,8 +23,8 @@ ui <-
                    textInput("text", "4. Enter some text to be displayed", "")),
                    mainPanel(
                              plotOutput("myhist"),
-                             textOutput("mytext"),
-                             tableOutput("mytable")
+                             tableOutput("mytable"),
+                             textOutput("mytext")
                              )
       )
     )
