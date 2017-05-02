@@ -6,6 +6,8 @@ This repository contains the files necessary to complete the Coding Club Shiny t
 
 The subdirectory `Example_App` contains an example Shiny application which can be recreated using the online tutorial.
 
+The subdirectory `Challenge_Apps` contains examples of apps to be emulated in the tutorial challenge
+
 
 `shiny-cheatsheet.pdf` was downloaded from https://www.rstudio.com/wp-content/uploads/2015/02/shiny-cheatsheet.pdf
 
