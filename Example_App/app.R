@@ -10,7 +10,7 @@ Barley <- as.data.frame(beaven.barley)
 # ui.R ----
 ui <- 
   fluidPage(
-    titlePanel(title = (h4("Barley Yield", align = "center"))),
+    titlePanel("Barley Yield"),
     sidebarLayout(
       position = "right",
       sidebarPanel(h3("Inputs for histogram"), 

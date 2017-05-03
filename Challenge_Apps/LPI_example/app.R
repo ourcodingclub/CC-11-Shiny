@@ -13,14 +13,15 @@ map_world <- borders("world", colour="black", fill = "gray28")
 
 # ui.R ----
 ui <- fluidPage(title = "Living Planet Index",
-								fluidRow(tags$h4("The spatial distribtion of records used to generate the 2016 Living Planet index (www.livingplanetindex.org)"),
+								verticalLayout(titlePanel("The spatial distribtion of records used to generate the 2016 Living Planet index (www.livingplanetindex.org)"),
 									plotOutput("global_map", height = "700px"),
-									selectInput(inputId = "realm_map", 
+									wellPanel(selectInput(inputId = "realm_map", 
 															label = "Choose realm", 
 															choices = unique(LPIdata_Feb2016$realm),
 															selected = unique(LPIdata_Feb2016$realm)[1],
 															multiple = TRUE
 															)
+														)
 									)
 								)
 
