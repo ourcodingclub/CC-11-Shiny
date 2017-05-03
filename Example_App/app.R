@@ -1,3 +1,7 @@
+# An example app for use in ourcodinclub.github.io Shiny tutorial
+# John Godlee (johngodlee@gmail.com)
+# 2017-05-03
+
 # Packages ----
 library(shiny)  # Required to run any Shiny app
 library(ggplot2)  # For creating pretty plots
